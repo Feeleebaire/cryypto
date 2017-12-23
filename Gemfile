@@ -10,7 +10,7 @@ gem 'rails', '5.1.4'
 gem 'redis'
 gem 'forest_liana'
 gem 'cloudinary'
-
+gem 'twitter', '~> 6.2'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
