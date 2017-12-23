@@ -9,6 +9,7 @@ gem 'puma'
 gem 'rails', '5.1.4'
 gem 'redis'
 gem 'forest_liana'
+gem 'cloudinary'
 
 
 gem 'autoprefixer-rails'
