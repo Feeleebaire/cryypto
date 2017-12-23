@@ -8,6 +8,6 @@ class PagesController < ApplicationController
       config.access_token        = ENV['TWITTER_ACCESS_TOKEN']
       config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
     end
-    @client = client.search("#ripple", lang: "fr").count
+    @clients = client.search("#ripple", lang: "fr")
   end
 end
