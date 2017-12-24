@@ -12,6 +12,7 @@ gem 'forest_liana'
 gem 'cloudinary'
 gem 'twitter', '~> 6.2'
 gem 'binding_of_caller'
+gem 'carrierwave', '~> 0.11.2'
 
 
 gem 'autoprefixer-rails'
