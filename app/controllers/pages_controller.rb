@@ -15,8 +15,9 @@ class PagesController < ApplicationController
     @clients = client.search("#ripple")
     @bitcoin = client.search("#ETH")
 
-    url = 'https://api.github.com/users/Feeleebaire'
+    url = 'https://api.github.com/orgs/ripple'
     user_serialized = open(url).read
     @user = JSON.parse(user_serialized)
+
   end
 end

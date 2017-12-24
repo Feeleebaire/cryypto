@@ -11,6 +11,8 @@ gem 'redis'
 gem 'forest_liana'
 gem 'cloudinary'
 gem 'twitter', '~> 6.2'
+gem 'binding_of_caller'
+
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
