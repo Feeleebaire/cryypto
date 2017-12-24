@@ -1,5 +1,8 @@
+require 'json'
+require 'open-uri'
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home]
+
 
   def home
     client = Twitter::REST::Client.new do |config|
@@ -8,6 +11,12 @@ class PagesController < ApplicationController
       config.access_token        = ENV['TWITTER_ACCESS_TOKEN']
       config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
     end
-    @clients = client.search("#ripple", lang: "fr")
+
+    @clients = client.search("#ripple")
+    @bitcoin = client.search("#ETH")
+
+    url = 'https://api.github.com/users/Feeleebaire'
+    user_serialized = open(url).read
+    @user = JSON.parse(user_serialized)
   end
 end

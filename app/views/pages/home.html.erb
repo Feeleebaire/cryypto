@@ -1,8 +1,11 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Ripple</h1>
+<h2>Tweet: <%= @clients.count %></h2>
+<h1>Ethereum</h1>
+<h2>Tweet: <%= @bitcoin.count %></h2>
 <% @clients.each do |client|
  %>
  <ul>
-   <li><%= client.text %> <b><%=client.date%></b></li>
+   <li><%= client.text %> <b><%=client.created_at%></b></li>
  </ul>
  <% end %>
+ <%= @user %>
