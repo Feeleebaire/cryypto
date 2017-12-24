@@ -1,11 +1,5 @@
-<h1>Ripple</h1>
-<h2>Tweet: <%= @clients.count %></h2>
-<h1>Ethereum</h1>
-<h2>Tweet: <%= @bitcoin.count %></h2>
-<% @clients.each do |client|
- %>
- <ul>
-   <li><%= client.text %> <b><%=client.created_at%></b></li>
- </ul>
- <% end %>
- <%= @user %>
+<% @cryptos.each do |crypto| %>
+<h1><%= crypto.name %></h1>
+<%= cl_image_tag crypto.photo, height: 400, width: 400, crop: :fill %>
+<% end %>
+
