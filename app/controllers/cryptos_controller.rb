@@ -1,10 +1,11 @@
 class CryptosController < ApplicationController
-  before_action :set_crypto
+  before_action :set_crypto, only: [:show]
   def index
     @cryptos = Crypto.all
   end
 
   def show
+    @cryptos = Crypto.all
   end
 
   private
