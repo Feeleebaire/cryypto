@@ -1,3 +1,18 @@
-<% @cryptos.each do |crypto| %>
-<h1><%= crypto.name %> <%= cl_image_tag crypto.photo, height: 100, width: 100, crop: :fill %></h1>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <ul>
+          Devises
+      <% @cryptos.each do |crypto| %>
+        <li class="propre">
+          <div class="item">
+            <a><%= cl_image_tag crypto.photo, height: 20, width: 20 %> <%= crypto.name %> </a>
+          </div>
+        </li>
+      <% end %>
+      </ul>
+      </div>
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-3">.col-md-3</div>
+  </div>
+</div>

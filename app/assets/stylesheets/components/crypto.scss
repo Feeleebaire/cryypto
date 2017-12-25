@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+  }
+
+.item {
+margin-bottom: 10px;
+}
+
+.item:hover {
+  border: 1px solid #999999;
+  padding: 4px;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.item a {
+  text-decoration: none;
+  padding: 4px;
+  color: black
+}
