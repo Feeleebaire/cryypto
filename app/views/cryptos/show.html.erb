@@ -10,7 +10,15 @@
       <% end %>
       </ul>
       </div>
-    <div class="col-md-6"><%= @crypto.name %></div>
+    <div class="col-md-6"><%= @crypto.name %>
+      <ul>
+        <% @tweets.each do |tweet| %>
+        <li>
+          <%= tweet.text %>
+        </li>
+        <% end %>
+      </ul>
+    </div>
     <div class="col-md-3">.col-md-3</div>
   </div>
 </div>
